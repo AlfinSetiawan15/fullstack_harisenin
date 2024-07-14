@@ -1,0 +1,391 @@
+* {
+  padding: 0;
+  margin: 0;
+  color: white;
+  scroll-behavior: smooth;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 80px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 9999;
+}
+
+.logo h1 {
+  font-size: 50px;
+}
+
+.menu ul {
+  display: flex;
+}
+
+.menu ul li {
+  list-style-type: none;
+}
+
+.menu ul li a {
+  padding: 8px 15px;
+  margin: 10px;
+  border-radius: 20px;
+  color: white;
+  text-decoration: none;
+  transition: all ease-in-out 0.3s;
+  font-size: 20px;
+}
+
+.menu ul li a:hover {
+  padding: 8px 15px;
+  margin: 10px;
+  border-radius: 20px;
+  color: black;
+  background-color: white;
+}
+
+.hamburger-menu {
+  display: none;
+  font-size: 40px;
+}
+
+.content {
+  height: 100vh;
+  width: auto;
+  display: flex;
+  background-color: black;
+  padding: 1% 1%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.description {
+  padding: 0 40px;
+}
+
+.description h3 {
+  font-size: 2rem;
+  font-family: "Permanent Marker", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.description h2 {
+  font-size: 5rem;
+  font-family: "Permanent Marker", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.description h1 {
+  margin-bottom: 70px;
+  font-size: 5rem;
+  font-family: "Permanent Marker", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.description p {
+  font-size: 20px;
+}
+
+.description input {
+  margin: 20px 10px 0 0;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid white;
+  background-color: transparent;
+  color: white;
+}
+
+.description input::placeholder {
+  color: white;
+}
+
+.description button {
+  margin: 20px 10px 0 0;
+  padding: 15px;
+  border-radius: 10px;
+  width: 120px;
+  font-size: 15px;
+  border: 1px solid white;
+  background-color: transparent;
+}
+
+.description button:hover {
+  background-color: white;
+  color: black;
+}
+
+aside span {
+  position: absolute;
+  top: 0;
+  right: 50px;
+  z-index: 1;
+}
+
+aside img {
+  position: relative;
+  z-index: 5;
+}
+
+.about-us {
+  background-color: black;
+}
+
+.about-us h3 {
+  padding: 30px 0;
+  text-align: center;
+  font-size: 5rem;
+}
+
+.about-us .about-us-content {
+  padding: 100px;
+  display: flex;
+}
+
+.about-us .about-us-content img {
+  border-radius: 50px 0 50px 0;
+  border: 1px solid white;
+  margin-right: 50px;
+  width: 800px;
+  height: 600px;
+}
+
+.about-us .about-us-content p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+}
+
+.pricing {
+  background-color: black;
+}
+
+.pricing h3 {
+  padding: 30px 0;
+  text-align: center;
+  font-size: 5rem;
+}
+
+.pricing-container {
+  padding: 100px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.pricing-card {
+  width: 350px;
+  background-color: black;
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 20px;
+  border: 1px solid white;
+}
+
+.pricing-card img {
+  width: 100%;
+  height: auto;
+}
+
+.pricing-content {
+  padding: 16px;
+}
+
+.pricing-content h3 {
+  font-size: 28px;
+  margin-bottom: 8px;
+}
+
+.pricing-content .btn {
+  display: inline-block;
+  padding: 8px 16px;
+  text-decoration: none;
+  border-radius: 4px;
+  margin-top: 16px;
+  color: white;
+  border: 1px solid white;
+}
+
+.contact-us {
+  background-color: black;
+}
+
+.contact-us h3 {
+  padding: 30px 0;
+  text-align: center;
+  font-size: 5rem;
+}
+
+.contact-us-content {
+  width: 80%;
+  max-width: 800px;
+  margin: auto;
+  padding: 100px 0;
+}
+
+form input,
+textarea {
+  display: block;
+  width: 100%;
+  padding: 15px 0;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid white;
+  color: white;
+  outline: none;
+}
+
+form button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s ease;
+  border: 1px solid white;
+}
+
+form button:hover {
+  background-color: white;
+  color: black;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  font-size: 1.3rem;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+}
+
+@media screen and (max-width: 1200px) {
+  .content {
+    flex-direction: column;
+    height: auto;
+  }
+  aside {
+    order: -1;
+    display: flex;
+    text-align: center;
+    margin: 90px 0 60px;
+  }
+
+  aside img {
+    height: 500px;
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hamburger-menu {
+    display: flex;
+    font-size: 2rem;
+  }
+
+  .menu ul {
+    display: none;
+  }
+
+  .content {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .description {
+    padding: 0 10px;
+    order: 1;
+  }
+
+  .description h3 {
+    font-size: 1.2rem;
+  }
+
+  .description h2 {
+    font-size: 2.5rem;
+  }
+
+  .description h1 {
+    margin-bottom: 25px;
+    font-size: 2.5rem;
+  }
+
+  .description p {
+    font-size: 16px;
+  }
+
+  aside {
+    order: -1;
+    display: flex;
+    text-align: center;
+    margin: 90px 0 60px;
+    position: relative;
+  }
+
+  aside span {
+    top: -40px;
+    right: 10px;
+  }
+
+  aside span svg {
+    width: 350px;
+    height: 350px;
+  }
+
+  .content aside img {
+    height: 350px;
+    width: auto;
+  }
+
+  .about-us .about-us-content {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .about-us .about-us-content .container-image {
+    text-align: center;
+  }
+
+  .about-us h3 {
+    font-size: 3.5rem;
+  }
+
+  .about-us .about-us-content img {
+    width: 400px;
+    height: auto;
+    margin: 0;
+  }
+
+  .about-us .about-us-content p {
+    font-size: 1.2rem;
+    padding: 15px;
+  }
+
+  .pricing-container {
+    padding: 20px;
+  }
+
+  .pricing h3 {
+    font-size: 3.5rem;
+  }
+
+  .contact-us h3 {
+    font-size: 3.5rem;
+  }
+
+  footer {
+    font-size: 1rem;
+  }
+}
